@@ -1,0 +1,41 @@
+package com.mrprk;
+public class Emp {
+    int eid;
+    String ename;
+    public Emp(int eid, String ename){
+    super();
+    this.eid=eid;
+    this.ename=ename;
+    }
+}
+
+
+
+package com.mrprk;
+public class Student {
+    int sid;
+    String sname;
+    public Student(int sid, String sname){
+    super();
+    this.sid=sid;
+    this.sname=sname;
+
+  }
+}
+
+
+package com.mrprk;
+import java.util.ArrayList;
+public class Test2 {
+    public static void main(String[] args) {
+        ArrayList al = new ArrayList();
+        al.add("Atim");
+        al.add(10);
+        al.add(null);
+        al.add(new Emp(111,"Atim"));
+        al.add(new Student(1,"Durga"));
+        System.out.println(al.toString());
+        
+    }
+    
+}
